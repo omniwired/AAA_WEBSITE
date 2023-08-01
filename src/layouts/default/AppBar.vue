@@ -76,8 +76,8 @@
 
             <v-card v-bind="props" :color="isHovering ? 'primary' : undefined">
 
-              <v-btn to="/about">
-                About
+              <v-btn to="/roadmap">
+                Roadmap
               </v-btn>
 
             </v-card>
@@ -87,14 +87,14 @@
 
       </v-container>
 
-      <v-container class="d-flex justify-end">
-        <v-img class="mx-2" nmax-height="40" max-width="40" contain src="@/assets/AppBar_Footer/keplr.svg">
-        </v-img>
-      </v-container>
-
     </v-app-bar>
     
 </template>
 
 <script>
+
+//<v-container class="d-flex justify-end">
+//        <v-img class="mx-2" nmax-height="40" max-width="40" contain src="@/assets/AppBar_Footer/keplr.svg">
+//        </v-img>
+//</v-container>
 </script>
