@@ -14,66 +14,76 @@
       </v-container>
 
       <v-container class="d-flex align-center">
+        <div class="ma-2">
+          <v-hover v-slot:default="{ isHovering, props }">
 
-        <v-hover v-slot:default="{ isHovering, props }">
+            <v-card v-bind="props" :color="isHovering ? 'primary' : undefined">
 
-          <v-card v-bind="props" :color="isHovering ? 'primary' : undefined">
+              <v-btn to="/">
+                Home
+              </v-btn>
 
-            <v-btn to="/">
-              Home
-            </v-btn>
+            </v-card>
 
-          </v-card>
+          </v-hover>
 
-        </v-hover>
+        </div>
+        
+        <div class="ma-2">
+          <v-hover v-slot:default="{ isHovering, props }">
 
-        <v-hover v-slot:default="{ isHovering, props }">
+            <v-card v-bind="props" :color="isHovering ? 'primary' : undefined">
 
-          <v-card v-bind="props" :color="isHovering ? 'primary' : undefined">
+              <v-btn to="/nftcollections">
+                NFT Collections
+              </v-btn>
 
-            <v-btn to="/nftcollections">
-              NFT Collections
-            </v-btn>
+            </v-card>
 
-          </v-card>
+          </v-hover>
+        </div>
 
-        </v-hover>
+        <div class="ma-2">
+          <v-hover v-slot:default="{ isHovering, props }">
 
-        <v-hover v-slot:default="{ isHovering, props }">
+            <v-card v-bind="props" :color="isHovering ? 'primary' : undefined">
 
-          <v-card v-bind="props" :color="isHovering ? 'primary' : undefined">
+              <v-btn to="/communitywallets">
+                Community Wallets
+              </v-btn>
 
-            <v-btn to="/communitywallets">
-              Community Wallets
-            </v-btn>
+            </v-card>
 
-          </v-card>
+          </v-hover>
+        </div>
 
-        </v-hover>
+        <div class="ma-2">
+          <v-hover v-slot:default="{ isHovering, props }">
 
-        <v-hover v-slot:default="{ isHovering, props }">
+            <v-card v-bind="props" :color="isHovering ? 'primary' : undefined">
 
-          <v-card v-bind="props" :color="isHovering ? 'primary' : undefined">
+              <v-btn href="https://app.teritori.com/dapp/tori-punks/welcome" target="_blank">
+                dApp Toripunks
+              </v-btn>
 
-            <v-btn href="https://app.teritori.com/dapp/tori-punks/welcome" target="_blank">
-              dApp Toripunks
-            </v-btn>
+            </v-card>
 
-          </v-card>
+          </v-hover>
+        </div>
 
-        </v-hover>
+        <div class="ma-2">
+          <v-hover v-slot:default="{ isHovering, props }">
 
-        <v-hover v-slot:default="{ isHovering, props }">
+            <v-card v-bind="props" :color="isHovering ? 'primary' : undefined">
 
-          <v-card v-bind="props" :color="isHovering ? 'primary' : undefined">
+              <v-btn to="/about">
+                About
+              </v-btn>
 
-            <v-btn to="/about">
-              About
-            </v-btn>
+            </v-card>
 
-          </v-card>
-
-        </v-hover>
+          </v-hover>
+        </div>
 
       </v-container>
 
